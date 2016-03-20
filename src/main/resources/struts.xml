@@ -11,4 +11,15 @@
   <package name="angularstruts" extends="json-default"></package>
   <package name="data" extends="angularstruts" namespace="/data"></package>
 
+    <package name="default" extends="struts-default">
+
+        <action name="register" class="resources.actions.RegisterAction">
+            <result name="success">register-success.jsp</result>
+            <result name="error">register-error.jsp</result>
+        </action>
+
+    </package>
+
 </struts>
+
+
